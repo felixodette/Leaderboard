@@ -1,40 +1,43 @@
 {
-  "name": "webpack-template",
+  "name": "leaderboard",
   "version": "1.0.0",
-  "description": "Project Name Description the project.",
-  "private": true,
+  "description": "A web application that displays scores submitted by different players.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack serve --open"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felixodette/webpack-template.git"
+    "url": "git+https://github.com/benwmx/LeaderBoard.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rachid Boudaoudi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/felixodette/webpack-template/issues"
+    "url": "https://github.com/benwmx/LeaderBoard/issues"
   },
-  "homepage": "https://github.com/felixodette/webpack-template#readme",
+  "homepage": "https://github.com/benwmx/LeaderBoard#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
-    "css-loader": "^6.7.1",
-    "eslint": "^8.14.0",
-    "eslint-config-google": "^0.14.0",
-    "html-webpack-plugin": "^5.5.0",
-    "style-loader": "^3.3.1",
-    "typescript-eslint": "^0.0.1-alpha.0",
-    "web": "^0.0.2",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1"
-  },
-  "dependencies": {
-    "bootstrap": "^5.2.0-beta1",
-    "lodash": "^4.17.21"
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "gh-pages": "^3.2.3",
+    "hint": "^6.1.4",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.20.1",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.1"
   }
 }
