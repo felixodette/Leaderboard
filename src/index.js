@@ -7,7 +7,7 @@ const score = document.querySelector('[data-score]');
 const form = document.querySelector('[data-form]');
 const inputs = document.querySelectorAll('input');
 const confirmation = document.querySelector('[data-confirmation]');
-const scoresList = document.querySelector('#leaderboard ul');
+const scoresList = document.querySelector('#leaderboard table');
 
 const createScore = async () => {
   await fetch(requestURL, {
@@ -47,7 +47,7 @@ const getScoresList = async () => {
   await fetch(requestURL)
     .then((response) => response.json())
     .then((json) => {
-      scoresList.innerHTML = `${json.result.sort((a, b) => b.score - a.score).map((score, index) => `<li class="score"><span>${index + 1}.</span>${score.user}: ${score.score}</li>`).join('')}`;
+      scoresList.innerHTML = `${json.result.sort((a, b) => b.score - a.score).map((score, index) => `<tr class="score"><td><span>${index + 1}.</span></td><td>${score.user}<td>${score.score}</td></tr>`).join('')}`;
     });
 };
 

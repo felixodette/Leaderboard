@@ -59,16 +59,6 @@ form input {
   align-self: flex-end;
 }
 
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgb(99, 99, 99);
-  padding: 5px 40px;
-}
-
 .fa-copyright {
   margin: 0 20px;
 }
@@ -89,4 +79,14 @@ footer p {
 
 .card {
   margin: 2px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0f9d58;
+  padding: 5px 40px;
 }
