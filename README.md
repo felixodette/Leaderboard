@@ -10,9 +10,6 @@ Built With
 - Linters (Lighthouse, Webhint, Stylelint, Eslint)
 - Gitflow
 
-Live Demo (if available)
-Live Demo Link
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
