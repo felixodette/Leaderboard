@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <header>
     <h1>Leaderboard</h1>
 </header>
-<main>
-    <section id="leaderboard" data-leaderboard>
+<main class="container">
+    <section class="row" id="leaderboard" data-leaderboard>
         <div>
-            <h2>Recent scores</h2>
-            <button id="refresh-btn" type="button" data-btn-refresh>Refresh</button>
+            <h2>Recent scores<span><button class="waves-effect waves-light btn-small" id="refresh-btn" type="button" data-btn-refresh>Refresh<i class="material-icons right">refresh</i></button></span></h2>
         </div>
-        <ul></ul>
+        <div class="card"><ul></ul></div>
+
     </section>
-    <section id="add-score-section" data-add-score>
+    <section class="col s2" id="add-score-section" data-add-score>
         <h2>Add new score</h2>
-        <form data-form>
-            <input type="text" placeholder="Your name" id="name-input" data-user required>
-            <input type="number" placeholder="Your score" id="score-input" data-score required>
-            <input type="submit" value="Submit" id="submit-btn" data-btn-submit>
-        </form>
-        <span id="confirmation" data-confirmation></span>
+        <div class="card">
+            <form data-form>
+                <input type="text" placeholder="Your name" id="name-input" data-user required>
+                <input type="number" placeholder="Your score" id="score-input" data-score required>
+                <button type="submit" class="btn waves-effect waves-light btn-small" id="submit-btn" data-btn-submit>SUBMIT<i class="material-icons right">send</i></button>
+            </form>
+            <span id="confirmation" data-confirmation></span>
+        </div>
     </section>
 </main>
+<footer class="page-footer waves-effect waves-light">
+    <div class="footer-copyright">
+        <div class="container">
+            © 2022 Copyright Text
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 <script src="./index.js"></script>
+
 </body>
 </html>

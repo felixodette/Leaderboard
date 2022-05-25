@@ -40,9 +40,10 @@ main {
 }
 
 form {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-flow: column;
+  padding: 5% 5%;
 }
 
 form .input {
@@ -84,4 +85,8 @@ footer p {
 
 .inactive {
   display: none;
+}
+
+.card {
+  margin: 2px;
 }
