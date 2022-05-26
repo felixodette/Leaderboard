@@ -40,9 +40,10 @@ main {
 }
 
 form {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-flow: column;
+  padding: 5% 5%;
 }
 
 form .input {
@@ -56,16 +57,6 @@ form input {
 #submit {
   width: 50%;
   align-self: flex-end;
-}
-
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgb(99, 99, 99);
-  padding: 5px 40px;
 }
 
 .fa-copyright {
@@ -84,4 +75,18 @@ footer p {
 
 .inactive {
   display: none;
+}
+
+.card {
+  margin: 2px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0f9d58;
+  padding: 5px 40px;
 }
